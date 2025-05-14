@@ -1,0 +1,10 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<h2>Task Results</h2>
+<ul>
+{% for r in results %}
+  <li><b>{{ r.agent_id }}</b>: {{ r.task_id }} => {{ r.result }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<h2>Send Task to Agent</h2>
+<form method="post">
+  Agent ID: <input name="agent_id"><br>
+  Command: <input name="command"><br>
+  <input type="submit">
+</form>
+{% endblock %}
